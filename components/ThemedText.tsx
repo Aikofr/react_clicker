@@ -2,7 +2,7 @@ import { StyleSheet, Text, TextProps } from "react-native";
 import { useThemeColor } from "@/hooks/useThemeColor"
 
 type ThemedTextProps = TextProps & {
-    lightColor?: string; //Permet de spécifié des couleurs perso pour chacun des modes
+    lightColor?: string; //Permet de spécifier des couleurs perso pour chacun des modes
     darkColor?: string; //Laisser {}
     variant?: 'default' | 'title' | 'secondTitle';
     //variant?: keyof typeof styles (moin claire mais moin restrictif.)
