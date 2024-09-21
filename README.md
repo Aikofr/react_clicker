@@ -9,7 +9,6 @@
 
 - 🎨 **Support du mode clair/sombre**
 - 🧩 **Composants réutilisables thématiques** (ThemedText, ThemedView)
-- 📱 **Mise en page réactive**
 - 🔧 **Utilisation simple des couleurs personnalisées par mode**
 
 
