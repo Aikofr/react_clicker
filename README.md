@@ -1,50 +1,63 @@
-# Welcome to your Expo app 👋
+# 🚀 Template React Native avec Thèmes
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+![React Native](https://img.shields.io/badge/React%20Native-v0.70-blue?style=flat-square)
+![TypeScript](https://img.shields.io/badge/TypeScript-4.9-blue?style=flat-square)
+![Expo](https://img.shields.io/badge/Expo-48.0.0-lightgrey?style=flat-square)
 
-## Get started
 
-1. Install dependencies
+## ✨ Fonctionnalités
 
-   ```bash
-   npm install
-   ```
+- 🎨 **Support du mode clair/sombre**
+- 🧩 **Composants réutilisables thématiques** (ThemedText, ThemedView)
+- 🔧 **Utilisation simple des couleurs personnalisées par mode**
 
-2. Start the app
 
-   ```bash
-    npx expo start
-   ```
+## 📦 Installation
 
-In the output, you'll find options to open the app in a
+1. Clonez ce dépôt :
+    ```bash
+    git clone https://github.com/votre-utilisateur/votre-repo.git
+    ```
+2. Naviguez dans le dossier du projet :
+    ```bash
+    cd votre-repo
+    ```
+3. Installez les dépendances avec `npm` ou `yarn` :
+    ```bash
+    npm install
+    # ou
+    yarn install
+    ```
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## 🚀 Utilisation
 
-## Get a fresh project
+### 1. Remplacer les composants `Text` et `View`
+Pour utiliser les composants thématiques dans votre application React Native, vous pouvez remplacer les composants natifs `Text` et `View` par `ThemedText` et `ThemedView` respectivement. Cela permet de bénéficier du changement de thème en fonction du mode clair/sombre.
 
-When you're ready, run:
+Voici un exemple simple :
 
-```bash
-npm run reset-project
+```tsx
+import { ThemedView } from '@/components/ThemedView';
+import { ThemedText } from '@/components/ThemedText';
+
+export default function Exemple() {
+  return (
+    <ThemedView>
+      <ThemedText variant="title">Bienvenue dans l'application</ThemedText>
+    </ThemedView>
+  );
+}
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### 2. Spécifier des couleurs personnalisées
+Vous pouvez spécifier des couleurs personnalisées pour chaque mode (clair ou sombre) en passant des propriétés `lightColor` et `darkColor` :
 
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+```tsx
+<ThemedText
+  variant="default"
+  lightColor="#000000"
+  darkColor="#ffffff"
+>
+  Texte avec couleur personnalisée
+</ThemedText>
