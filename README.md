@@ -1,4 +1,4 @@
-# 🚀 Template React Native avec Thèmes
+# 🚀 Template React Native pré config
 
 ![React Native](https://img.shields.io/badge/React%20Native-v0.70-blue?style=flat-square)
 ![TypeScript](https://img.shields.io/badge/TypeScript-4.9-blue?style=flat-square)
@@ -16,7 +16,7 @@
 
 1. Clonez ce dépôt :
     ```bash
-    git clone https://github.com/votre-utilisateur/votre-repo.git
+    git clone https://github.com/Aikofr/react_native.git
     ```
 2. Naviguez dans le dossier du projet :
     ```bash
